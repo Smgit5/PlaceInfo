@@ -1,0 +1,29 @@
+
+
+#inputDiv label {
+    color: white;
+    font-size: 4.5rem;
+}
+
+#inputsButton select {
+    width: 220px;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.6rem;
+}
+
+#inputsButton {
+    margin-top: 1.2rem;
+}
+
+#submitBtn {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 1.5rem;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    background-color: darkslateblue;
+    color: darkkhaki;
+    border-radius: 0.6rem;
+}

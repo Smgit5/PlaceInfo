@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Info</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="inputs.css">
+</head>
+
+<body>
+    <div class="container"> <!-- main container holding everything-->
+        <div id="inputDiv"> <!--user input div-->
+            <label for="placeName">Select a place...</label>
+            <div id="inputsButton">
+                <select name="place" id="place">
+                    <option value="Nothing selected">Select</option>
+                    <option value="India">India</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="Bhutan">Bhutan</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="North Korea">North Korea</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Italy">Italy</option>
+                </select>
+
+                <button id="submitBtn">OK</button>
+            </div>
+        </div>
+
+        <div class="card"> <!--place information div-->
+            <img id="flagImg">
+            <div id="basicInfo">
+                <h3 id="placeName"></h3>
+                <p id="capital"></p>
+            </div>
+            <hr>
+            <div id="extraInfo">
+                <div id="regionDiv" class="extraInfoClass">
+                    <h3 id="region"></h3>
+                    <p>Region</p>
+                </div>
+
+                <div id="populationDiv" class="extraInfoClass">
+                    <h3 id="population"></h3>
+                    <p>Population</p>
+                </div>
+
+                <div id="timeZoneDiv" class="extraInfoClass">
+                    <h3 id="timeZone"></h3>
+                    <p>Time Zone</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
