@@ -4,11 +4,26 @@
     padding: 0;
 }
 
+#darkMode {
+    position: relative;
+}
+#darkMode button {
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    font-size: larger;
+    font-weight: bold;
+    padding: 0 2px;
+    border-radius: 3px;
+    /* border: 2px solid black; */
+    cursor: pointer;
+}
+
 .container {
     height: 100vh;
     display: grid;
     place-items: center;
-    background-color: black;
+    /* background-color: white; */
 }
 
 #basicInfo {

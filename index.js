@@ -1,4 +1,4 @@
-// const container = document.querySelector(".container");
+const container = document.querySelector(".container");
 const card = document.querySelector(".card");
 const submitBtn = document.querySelector("#submitBtn");
 let flagImg = document.querySelector("#flagImg");
@@ -7,6 +7,22 @@ let capital = document.querySelector("#capital");
 let region = document.querySelector("#region");
 let population = document.querySelector("#population");
 let timeZone = document.querySelector("#timeZone");
+
+const darkToggle = document.querySelector("#darkToggle");
+const inputLabel = document.querySelector("#inputLabel");
+darkToggle.addEventListener("click", () => {
+    let theme = darkToggle.innerHTML;
+    if(theme === "Light") {
+        darkToggle.innerHTML = "Dark";
+        container.style.background = "black";
+        inputLabel.style.color = "white";
+    }
+    else {
+        darkToggle.innerHTML = "Light";
+        container.style.background = "white";
+        inputLabel.style.color = "black";
+    }
+})
 
 
 submitBtn.addEventListener("click", () => {
